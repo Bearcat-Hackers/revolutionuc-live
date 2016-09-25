@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+    h3 Schedule
+
+    .mdl-grid
+        .mdl-cell.mdl-cell--4-col
+            a(class="twitter-timeline", href="https://twitter.com/Revolution_UC") Tweets by Revolution_UC
+            script(async, src="//platform.twitter.com/widgets.js", charset="utf-8")
+
+        .mdl-cell.mdl-cell--8-col
+            p embed google sheets schedule
