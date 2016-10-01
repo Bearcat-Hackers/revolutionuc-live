@@ -1,0 +1,17 @@
+{
+  "name": "RevolutionUC Live",
+  "short_name": "Live",
+  "gcm_sender_id": "456445283051",
+  "gcm_user_visible_only": true,
+  "icons": [
+    {
+      "src": "images/180.png",
+      "sizes": "180x180"
+    }
+  ],
+  "theme_color": "#C24851",
+  "background_color": "#434a54",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "/"
+}

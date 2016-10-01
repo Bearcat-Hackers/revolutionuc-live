@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/Bearcat-Hackers/revolutionuc-live#readme",
   "dependencies": {
+    "babel-core": "^6.16.0",
     "babel-loader": "^6.2.5",
     "babel-preset-es2015": "^6.14.0",
     "body-parser": "^1.15.2",
@@ -36,7 +37,8 @@
     "morgan": "^1.7.0",
     "pug": "^2.0.0-beta6",
     "serve-favicon": "^2.3.0",
-    "webpack": "^1.13.2"
+    "webpack": "^1.13.2",
+    "web-push": "^3.0.0"
   },
   "devDependencies": {
     "webpack-dev-server": "^1.15.2"
