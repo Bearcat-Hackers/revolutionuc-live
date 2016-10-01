@@ -21,7 +21,13 @@ app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(expressValidator());
+app.use(expressValidator({
+ customValidators: {
+    notificationKeyValid: function(candidate, realKey) {
+        return candidate === realKey;
+    }
+ }
+}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -38,6 +44,10 @@ app.get('/notifications', pages.notifications);
 // Notification api
 app.post('/api/v1/notification/publish', notificationApi.publish);
 app.post('/api/v1/notification/subscribe', notificationApi.subscribe);
+
+// TODO: Secure or remove diagnostic endpoints:
+app.get('/api/v1/notification/credentials', notificationApi.credentials);
+app.get('/api/v1/notification/clearCredentials', notificationApi.clearCredentials);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

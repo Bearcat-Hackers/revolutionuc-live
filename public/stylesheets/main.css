@@ -9,6 +9,11 @@ body {
 }
 
 body.night {
-    background-color: #111 !important;
+    background-color: #333 !important;
     color: #eee !important;
+
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
 }
