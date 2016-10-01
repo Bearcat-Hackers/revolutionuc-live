@@ -1,37 +1,46 @@
 doctype html
-html(lang="en")
+html(lang='en')
     head
-        meta(charset="utf-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0, minimum-scale=1.0")
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0')
 
         title #{title} - RevolutionUC Live Fall 2016
 
-        link(rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32")
-        link(rel="icon" type="image/png" href="/favicon-16.png" sizes="16x16")
-        link(rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180")
+        link(rel='icon' type='image/png' href='/favicon-32.png' sizes='32x32')
+        link(rel='icon' type='image/png' href='/favicon-16.png' sizes='16x16')
+        link(rel='apple-touch-icon' href='/apple-touch-icon.png' sizes='180x180')
 
-        //link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
         link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Ubuntu:400,700')
-        link(rel='stylesheet', href='https://code.getmdl.io/1.2.1/material.indigo-pink.min.css')
+        link(href='https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css', rel='stylesheet', integrity='sha384-+ENW/yibaokMnme+vBLnHMphUYxHs34h9lpdbSLuAwGkOKFRl4C34WkjazBtb7eT', crossorigin='anonymous')
         link(rel='stylesheet', href='/stylesheets/main.css')
-        // TODO: swich css between day and night styles
     body
-        .mdl-layout.mdl-js-layout
-            header.mdl-layout__header.mdl-layout__header--scroll
-                .mdl-layout__header-row
-                    span.mdl-layout-title Live
-                    .mdl-layout-spacer
-                    nav.mdl-navigation
-                        a.mdl-navigation__link(href='/schedule') Schedule
-                        a.mdl-navigation__link(href='/talks') Tech Talks
-                        a.mdl-navigation__link(href='/sponsors') Sponsors
-                        a.mdl-navigation__link(href='/notifications') Notification Settings
-                        a.mdl-navigation__link(href='/mentors') Request a Mentor
-                        a.mdl-navigation__link(target="_blank", href='https://www.uc.edu/content/dam/common/docs/maps/campus_map_west_color.pdf') Map
-            main.mdl-layout__content
-                .page-content
+        nav.navbar.navbar-default.navbar-fixed-top
+            .container-fluid
+                .navbar-header
+                    button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+                        span.sr-only Toggle navigation
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href='/') RevolutionUC Live
+                .collapse.navbar-collapse(id='bs-example-navbar-collapse-1')
+                    ul.nav.navbar-nav.navbar-right
+                        li
+                            a(href='/schedule') Schedule
+                        li
+                            a(href='/talks') Tech Talks
+                        li
+                            a(href='/sponsors') Sponsors
+                        li
+                            a(href='/notifications') Notification Settings
+                        li
+                            a(href='/mentors') Request a Mentor
+                        li
+                            a(target='_blank', href='https://www.uc.edu/content/dam/common/docs/maps/campus_map_west_color.pdf') Map
+        .container
+            .row
+                .col-sm-12
                     block content
 
-        script(src='https://code.getmdl.io/1.2.1/material.min.js')
         script(src='/javascripts/main.min.js')
