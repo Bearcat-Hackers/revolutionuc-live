@@ -40,6 +40,7 @@ app.get('/', pages.index);
 app.get('/schedule', pages.schedule);
 app.get('/sponsors', pages.sponsors);
 app.get('/notifications', pages.notifications);
+app.get('/talks', pages.techtalks);
 
 // Notification api
 app.post('/api/v1/notification/publish', notificationApi.publish);
