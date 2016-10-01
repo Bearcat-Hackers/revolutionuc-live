@@ -1,5 +1,5 @@
-#twitter-widget-0 {
-    max-height: 500px;
+.twitter-timeline-container {
+    max-height: 600px;
     overflow: scroll;
 }
 
