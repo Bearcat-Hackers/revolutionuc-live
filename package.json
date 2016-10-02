@@ -37,11 +37,11 @@
     "morgan": "^1.7.0",
     "pug": "^2.0.0-beta6",
     "serve-favicon": "^2.3.0",
-    "webpack": "^1.13.2",
-    "web-push": "^3.0.0"
+    "unminified-webpack-plugin": "^1.1.1",
+    "web-push": "^3.0.0",
+    "webpack": "^1.13.2"
   },
   "devDependencies": {
-    "webpack": "^1.13.2",
     "webpack-dev-server": "^1.15.2"
   }
 }

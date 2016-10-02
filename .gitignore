@@ -1,5 +1,5 @@
 .env
-public/javascripts/*.min.js
+public/javascripts/*.js
 public/javascripts/*.map
 subscriber-info.json
 
