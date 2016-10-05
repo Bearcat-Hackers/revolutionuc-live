@@ -21,7 +21,7 @@
 
 'use strict';
 
-console.log('Started', self);
+console.log('v0', self);
 
 self.addEventListener('install', function(event) {
   self.skipWaiting();
