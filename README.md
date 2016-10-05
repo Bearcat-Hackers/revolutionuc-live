@@ -10,7 +10,7 @@
 
 ## api
 
-Example post request to publish push notification. Pass the `NOTIFICATIONS_KEY` that is setup in `.env` and a payload message: `curl -d "apikey=ffreffwwrew&payload=My Message" http://localhost:3000/api/v1/notification/publish` (add a `-v` flag for a verbose response message)
+Example post request to publish push notification. Pass the `NOTIFICATIONS_KEY` that is setup in `.env` and a payload message: `curl -d "apikey=yo&text=My Message" http://localhost:3000/api/v1/notification/publish` (add a `-v` flag for a verbose response message)
 
 ## Notes
 
