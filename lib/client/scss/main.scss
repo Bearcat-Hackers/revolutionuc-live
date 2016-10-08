@@ -1,11 +1,18 @@
+@import 'variables';
+@import '../../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
 .twitter-timeline-container {
     max-height: 600px;
     overflow: scroll;
 }
 
+.navbar {
+    border-bottom: 5px solid $brand-success;
+}
+
 body {
     font-family: 'Ubuntu', sans-serif;
-    padding-top: 70px;
+    padding-top: 75px;
 }
 
 body.night {
