@@ -2,7 +2,7 @@
 @import '../../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
 .twitter-timeline-container {
-  max-height: 600px;
+  max-height: 650px;
   overflow: scroll;
 }
 
@@ -12,7 +12,7 @@
 
 body {
   font-family: 'Ubuntu', sans-serif;
-  padding-top: 75px;
+  padding-top: 100px;
 }
 
 body.night {
