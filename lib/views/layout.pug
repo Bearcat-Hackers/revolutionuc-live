@@ -41,13 +41,17 @@ html(lang='en')
                 .collapse.navbar-collapse(id='bs-example-navbar-collapse-1')
                     ul.nav.navbar-nav.navbar-right
                         li
+                            a
+                                span Subscribe to notifications:
+                                label.switch
+                                    input(type='checkbox')
+                                    .slider.round#subscribe-button
+                        li
                             a(href='/schedule') Schedule
                         li
                             a(href='/talks') Tech Talks
                         li
                             a(href='/sponsors') Sponsors
-                        li
-                            a(href='/notifications') Notification Settings
                         li
                             a(href='/mentors') Request a Mentor
                         li
