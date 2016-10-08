@@ -40,7 +40,6 @@ const notificationApi = require('./lib/controllers/api/v1/notification');
 app.get('/', pages.index);
 app.get('/schedule', pages.schedule);
 app.get('/sponsors', pages.sponsors);
-app.get('/notifications', pages.notifications);
 app.get('/talks', pages.techtalks);
 
 // Notification api
